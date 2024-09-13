@@ -1,33 +1,33 @@
-#бот тот же, что и на самой бирже (сайте)
+#Bot is the same as on the Exchange (website)
 bot_username: '@exchangecryptopro_bot'
 bot_token: '7528095452:AAFd1gJl2ELo880_J8AmmdMKqIB-G3DuTNo'
 referals:
   - /start
 mysql:
-  host: 'localhost'
+  host: '158.179.222.47'
   database: 'exchange'
   user: 'root'
-  #Ваш пароль от mysql
+  #Your mysql password
   password: '123123123'
-#телеграм айди администраторов, у них в боте будет отображаться только админ панель
+#Telegram admin IDs, they will only see the admin panel in the bot
 admin_telegram_ids:
-  - 1
+  - 717601608
 deepfake:
   min_deposits: 1
   tts_deposits: 1
 cloudflare:
-  user_id: 'CF_USER_ID_HERE'
-  token: 'CF_TOKEN_HERE'
+  user_id: '1c8e902df178b5452a64270d562b8951'
+  token: 'gt6WBYfwSSDyxn9k9hCFu83V3wzSfZPMMU5C8EBN'
   block_countries: 'RU,BY,KZ'
-  server_ip: '1.2.3.4'
+  server_ip: '158.179.215.40'
 files:
   secret: 'SECRET_HERE'
   host: 'http://127.0.0.1/'
 join_questions:
-  1: '💻 Отправьте ссылку на ваш профиль на каком нибудь из форумов:'
-  2: '📊 Напишите про ваш опыт, если он имеется:'
-  3: '📱 Напишите, какая у вас модель телефона (iPhone/Android):'
-  4: '⌛ Напишите, сколько времени вы готовы уделять работе:'
+  1: '💻 Send a link to your profile on any of the forums:'
+  2: '📊 Describe your experience, if any:'
+  3: '📱 Specify your phone model (iPhone/Android):'
+  4: '⌛ Specify how much time you are willing to devote to work:'
 urls:
   chat: 'https://t.me/yukitale'
   pays: 'https://t.me/yukitale'
@@ -37,23 +37,23 @@ urls:
 default_group: '1'
 user_groups:
   1:
-    prefix: '👻 Ранг 1 (Бесплотный дух)'
+    prefix: '👻 Rank 1 (Ghost)'
     percent: 55
     min_deposits: 0
   2:
-    prefix: '🧛 Ранг 2 (Вампир)'
+    prefix: '🧛 Rank 2 (Vampire)'
     percent: 60
     min_deposits: 10000
   3:
-    prefix: '👿 Ранг 3 (Демон)'
+    prefix: '👿 Rank 3 (Demon)'
     percent: 65
     min_deposits: 20000
   4:
-    prefix: '🔮 Ранг 4 (Ветеран)'
+    prefix: '🔮 Rank 4 (Veteran)'
     percent: 70
     min_deposits: 30000
   5:
-    prefix: '👑 Ранг 5 (Повелитель тьмы)'
+    prefix: '👑 Rank 5 (Dark Lord)'
     percent: 75
     min_deposits: 40000
 deposits_channel_id: -123
@@ -68,618 +68,628 @@ settings:
   sms_limit_after_deposit: 6
   default_percent: 35
   promo_text: 'Congratulations! You activate a promo'
-  #это апи ключ который нужно взять из админ панели биржи (Settings - API Key)
+  #this is the API key that needs to be taken from the admin panel of the exchange (Settings - API Key)
   api_key: 'BlIl4yC2UWCQavsfrCZSNSrJ05bC8dFU'
-  #Айпи сервера где стоит биржа. Если все на одном, то localhost
+  #The IP of the server where the exchange is located. If everything is on one, then localhost
   exchange_host: 'localhost'
-  #регаешь аккаунт, создаешь апи ключ
+  #registers an account, creates an API key
   proxy6_api_key: 49a9175cdc-daba3d7d31-c7008710ef
-  #регаешь аккаунт, создаешь апи ключ
+  #registers an account, creates an API key
   5sim_biz_api_key: 'eyJhbGciOiJSUzUxMiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3Mjc2MjM0MzksImlhdCI6MTY5NjA4NzQzOSwicmF5IjoiNDMxZjhmOWUyMWFlNjI0NDBkZDkwNjUwM2NhYTYyZjEiLCJzdWIiOjE4OTU3NTJ9.mtD1xUT7zWOols0x7U-_rSl7tDGDyM-2jPRC31PQhySab_8isCukiwTQgPA5IFnb_lSV02PguxdK1k1DDI1iSXHrnmtCHYlzMm8vdg5z1f86nM2YfS-MIkXedBTqBjK4vdbrFBkd-sjzfWcZx41aMWF0DuhcaoHBE6ADamiJA6UsnFBy0hlWMOrKxgVHa3q8cYKB2zjvYzA3dOJD3N3bbwEPNfH0SLA6sXxbq_-0IAq91yutAl0LIlYksweftqS909288587WfOKk3RpzUzo6Re8Mcsan8-hnb2z1o98mAQxPXPAQsF4-RD5OTAecNA1Q7cQtOEhSrEvL10F9-y2BQ'
 proxy:
-  #на сколько берется дней прокси (в ipv6 есть лимиты и минимальное количество днеЙ)
+  #for how many days the proxy is taken (in IPv6 there are limits and minimum number of days)
   period: 3
   #socks/http
   type: http
-  #Версия прокси: 4 - IPv4, 3 - IPv4 Shared, 6 - IPv6
+  #Proxy version: 4 - IPv4, 3 - IPv4 Shared, 6 - IPv6
   version: 3
   countries:
-    CA: 🇨🇦 Канада
-    DE: 🇩🇪 Германия
-    US: 🇺🇸 США
-    FR: 🇫🇷 Франция
-    AU: 🇦🇺 Австралия
+    CA: 🇨🇦 Canada
+    DE: 🇩🇪 Germany
+    US: 🇺🇸 USA
+    FR: 🇫🇷 France
+    AU: 🇦🇺 Australia
 sms:
-  #список стран: https://5sim.biz/docs/ru/?php#8f7172ca4d
+  #list of countries: https://5sim.biz/docs/ru/?php#8f7172ca4d
   countries:
-    usa: "🇺🇸 США"
-    canada: "🇨🇦 Канада"
-    england: "🇬🇧 Великобритания"
-    france: "🇫🇷 Франция"
-    spain: "🇪🇸 Испания"
+    usa: "🇺🇸 USA"
+    canada: "🇨🇦 Canada"
+    england: "🇬🇧 United Kingdom"
+    france: "🇫🇷 France"
+    spain: "🇪🇸 Spain"
 messages:
-  admin_button_group_worker: '🖍 Изменить группу воркеру'
-  group_worker_id: '🖍 Напишите id воркера, чтобы изменить ему процент и группу'
-  group_worker_group: '🖍 Напишите id группы (в конфиге), чтобы установить ее воркеру'
-  worker_group_changed: '✅ Процент и группа воркера успешно изменены'
+  admin_button_group_worker: '🖍 Change worker group'
+  group_worker_id: '🖍 Enter the worker id to change their percent and group'
+  group_worker_group: '🖍 Enter the group id (in the config) to assign it to the worker'
+  worker_group_changed: '✅ Worker percent and group successfully changed'
   tools_proxy: |-
-    🌐 Напишите вручную код страны, которая вам нужна
+    🌐 Manually enter the country code you need
     
-    Пример: US
-  find_proxy: '🖥 Ищем подходящий прокси...'
-  buy_proxy: '💸 Покупаем прокси...'
+    Example: US
+  find_proxy: '🖥 Searching for a suitable proxy...'
+  buy_proxy: '💸 Buying proxy...'
   deposit_for_channel: |-
-    ⚡️ Новый депозит!
+    ⚡️ New deposit!
     
-    👥 Филиал: `%8$s`
+    👥 Branch: `%8$s`
 
-    👮 Воркер: `@%1$s`
-    🎯 Пользователь: `%7$s`e
+    👮 Worker: `@%1$s`
+    🎯 User: `%7$s`e
     
-    🔗 Домен: `%2$s`
-    🖥 Промокод: `%3$s`
+    🔗 Domain: `%2$s`
+    🖥 Promo code: `%3$s`
 
-    💳 Сумма: `$%4$s` `(%5$s %6$s)`
-  button_top: '👑 Топ'
-  button_top_all_time: 'Все время'
-  button_top_month: 'Месяц'
-  button_top_week: 'Неделя'
-  button_top_day: 'День'
+    💳 Amount: `$%4$s` `(%5$s %6$s)`
+  button_top: '👑 Top'
+  button_top_all_time: 'All time'
+  button_top_month: 'Month'
+  button_top_week: 'Week'
+  button_top_day: 'Day'
   top_list: |-
-    🎯 Выберите, за какое время вы хотите посмотреть топ:
+    🎯 Choose the time period for the top list:
 
   top_get_list: |-
-    👑 Топ за %1$s
+    👑 Top for %1$s
     
     %2$s
   top_line: '%1$s. `%2$s`, 💸 %3$s (%4$s$) 👮 %5$s'
-  top_is_empty: 'Депозитов за данный период нет'
+  top_is_empty: No deposits for this period'
 
-  admin_branch_edit_percents: 'Изменить проценты'
-  find_worker: 'Найти воркера'
-  worker_name_find: '🖍 Напишите username воркера'
-  worker_username_not_found: '⛔ Воркер с таким никнеймом не найден'
+  admin_branch_edit_percents: 'Edit percentages'
+  find_worker: 'Find worker'
+  worker_name_find: '🖍 Enter the worker username'
+  worker_username_not_found: '⛔ Worker with this username not found'
   admin_find_worker_line: 'ID: %1$s / `@%2$s`:  %3$s, 🎯  **%7$s %6$s%%**  (**%8$s/%9$s)  💸  **%4$s**
     / **%5$s**$ (%10$s / %11$s)'
   
-  proxy_country_error: '⛔ Неверный код страны'
-  proxy_error: '⛔ Ошибка получения прокси'
+  proxy_country_error: '⛔ Invalid country code'
+  proxy_error: '⛔ Error retrieving proxy'
   branch_workers: |-
-    👮 Всего воркеров `%1$s`:
+    👮 Total workers `%1$s`:
     
     %2$s
-  branch_worker_format: '%1$s. `@%2$s` 💸 Депозиты: %3$s / %4$s$'
-  branch_profile_percent_format: '`(+%1$s%% филиал)`'
-  button_branch_pending_requests: '🎯 Непринятые заявки'
-  branch_button_delete_worker: '🗑 Удалить воркера'
-  branch_delete_worker: '🖍 Напишите id воркера, чтобы удалить его из филиала. ID - цифра в начале строки в списке воркеров филиала.'
-  branch_worker_not_found: '⛔ Воркер с таким id не найден в вашем филиале'
-  branch_worker_deleted: '✅ Воркер `%1$s` успешно удален из вашего филиала'
-  admin_branch_edit_delete: '❌ Удалить филиал'
-  admin_delete_branch: '✅ Вы успешно удалили филиал `%1$s`'
+  branch_worker_format: '%1$s. `@%2$s` 💸 Deposits: %3$s / %4$s$'
+  branch_profile_percent_format: '`(+%1$s%% branch)`'
+  button_branch_pending_requests: '🎯 Pending requests'
+  branch_button_delete_worker: '🗑 Delete worker'
+  branch_delete_worker: '🖍 Enter the worker id to remove them from the branch. ID - number at the beginning of the line in the branch workers list.'
+  branch_worker_not_found: '⛔ Worker with this id not found in your branch'
+  branch_worker_deleted: '✅ Worker `%1$s` successfully removed from your branch'
+  admin_branch_edit_delete: '❌ Delete branch'
+  admin_delete_branch: '✅ You have successfully deleted the branch `%1$s`'
 
   my_branch_owner: |-
-    🗯 Ваш филиал %1$s
+    🗯 Your branch %1$s
     
-    🤑 Сумма профитов: $%3$s
-    💸 Заработано: $%7$s
-    🎯 Ваш процент: `%5$s%%`
-    🎯 Процент воркеров: `%6$s%%`
+    🤑 Profit amount: $%3$s
+    💸 Earned: $%7$s
+    🎯 Your percentage: `%5$s%%`
+    🎯 Workers percentage: `%6$s%%`
     
-    Описание филиала: %4$s
+    Branch description: %4$s
   my_branch: |-
-    ☁ Ваш филиал: %1$s
-    
-    💬 Чат: %3$s
-    
-    Описание филиала: %2$s
+    ☁ Your branch: %1$s
+  
+    💬 Chat: %3$s
+  
+    Branch description: %2$s
 
-  branch_request_question_1: '💻 Отправьте ссылку на ваш профиль на каком нибудь из форумов:'
-  branch_request_question_2: '📊 Напишите про ваш опыт, если он имеется:'
-  branch_request_question_3: '📱 Напишите, какая у вас модель телефона (iPhone/Android):'
-  branch_request_question_4: '⌛ Напишите, сколько времени вы готовы уделять работе:'
-  branch_accepted: ✅ Заявка успешно принята'
-  branch_canceled: '❌ Заявка успешно отклонена'
-  branch_accepted_user: '✅ Ваша заявка в филиал была принята, чат: %1$s'
-  branch_canceled_user: '❌ Ваша заявка в филиал была отклонена'
-  branch_request_not_found: '⛔ Запрос не найден, возможно он был уже принят или отклонен'
+  branch_request_question_1: '💻 Send a link to your profile on any of the forums:'
+  branch_request_question_2: '📊 Describe your experience, if any:'
+  branch_request_question_3: '📱 Specify your phone model (iPhone/Android):'
+  branch_request_question_4: '⌛ Specify how much time you are willing to devote to work:'
+  branch_accepted: '✅ Application successfully accepted'
+  branch_canceled: '❌ Application successfully rejected'
+  branch_accepted_user: '✅ Your branch application was accepted, chat: %1$s'
+  branch_canceled_user: '❌ Your branch application was rejected'
+  branch_request_not_found: '⛔ Request not found, it may have already been accepted or rejected'
   branch_get_request: |-
-    📝 Получена новая заявка в филиал
+    📝 New branch application received
 
-    👮 Пользователь: `%s`
+    👮 User: `%s`
 
-    📋 Форма:
+    📋 Form:
     1. %1$s
     2. %2$s
     3. %3$s
     4. %4$s
-
   branches: |-
-    😥 Вы не состоите в филиале.
+    😥 You are not part of any branch.
 
-    Чтобы вступить в филиал, вы можете попросить ТСа добавить вас, подать заявку по кнопке ниже.
+    To join a branch, you can ask the TC to add you or apply using the button below.
 
-    ❗️При вступлении в филиал к профитам будет добавлено +5%%.
-  button_branches_top: '👑 Топ филиалов'
-  button_branches_request: '📤 Подать заявку'
+    ❗️Joining a branch will add +5%% to the profits.
+  button_branches_top: '👑 Top branches'
+  button_branches_request: '📤 Apply'
   top_branches: |-
-    🏆 Топ филиалов
-    
+    🏆 Top branches
+  
     %s
   top_branch_format: |-
     %1$s. %2$s (@%3$s)
-    💰 Депозиты: $%4$s
-  branch_already_have: '⛔ Вы уже состоите в филиале'
-  branch_request_sent: '✅ Вы успешно подали заявку в филиал %1$s, ожидайте ответа'
-  question_max_length: '⛔ Максимальная длина ответа - 128 символов, подайте заявку заново'
-  admin_edit_branch: '📝 Напишите нужное значение:'
-  button_branch_workers: 'Воркеры'
-  button_branch_withdraw: 'Снять средства'
-  branch_request_accept_button: '✅ Принять'
-  branch_request_cancel_button: '❌ Отклонить'
+    💰 Deposits: $%4$s
+  branch_already_have: '⛔ You are already part of a branch'
+  branch_request_sent: '✅ You have successfully applied to branch %1$s, please wait for a response'
+  question_max_length: '⛔ Maximum response length is 128 characters, please apply again'
+  admin_edit_branch: '📝 Enter the required value:'
+  button_branch_workers: 'Workers'
+  button_branch_withdraw: 'Withdraw funds'
+  branch_request_accept_button: '✅ Accept'
+  branch_request_cancel_button: '❌ Reject'
 
   admin_get_branch: |-
-    Название: %1$s
-    Домен: %2$s
-    Владелец: %3$s
-    Заработано: %4$s$
-    
+    Name: %1$s
+    Domain: %2$s
+    Owner: %3$s
+    Earned: %4$s$
+  
     %5$s
 
-  admin_branch_edit_name: 'Изменить название'
-  admin_branch_edit_domain: 'Изменить домен'
-  admin_branch_edit_description: 'Изменить описание'
+  admin_branch_edit_name: 'Change Name'
+  admin_branch_edit_domain: 'Change Domain'
+  admin_branch_edit_description: 'Change Description'
 
-  admin_branch_edited: '✅ Данные о филиале успешно изменены'
-  admin_branches: '👥 Управление филиалами'
-  admin_button_branches: '👥 Управление филиалами'
-  admin_button_all_branches: 'Все филиалы'
-  admin_button_create_branch: 'Создать филиал'
+  admin_branch_edited: '✅ Branch information successfully updated'
+  admin_branches: '👥 Branch Management'
+  admin_button_branches: '👥 Branch Management'
+  admin_button_all_branches: 'All Branches'
+  admin_button_create_branch: 'Create Branch'
 
-  admin_create_branch_name: '📝 Укажите название филиала'
-  admin_create_branch_description: '📝 Укажите описание филиала'
-  admin_create_branch_domain: '📝 Укажите домен филиала в таком формате exchange.com'
-  admin_create_branch_owner_username: '📝 Укажите telegram username владельца филиала'
-  admin_create_branch_chat_id: '📝 Укажите id чата филиала'
-  admin_create_branch_chat_link: '📝 Укажите ссылку на чат филиала'
-  admin_create_branch_percents: '📝 Укажите процент воркера и владельца филиала в таком формате: 5/10'
+  admin_create_branch_name: '📝 Enter the branch name'
+  admin_create_branch_description: '📝 Enter the branch description'
+  admin_create_branch_domain: '📝 Enter the branch domain in the format exchange.com'
+  admin_create_branch_owner_username: '📝 Enter the branch owner’s Telegram username'
+  admin_create_branch_chat_id: '📝 Enter the branch chat ID'
+  admin_create_branch_chat_link: '📝 Enter the branch chat link'
+  admin_create_branch_percents: '📝 Enter the worker and branch owner percentages in the format: 5/10'
 
-  admin_branch_created: '✅ Вы успешно создали новый филиал'
+  admin_branch_created: '✅ You have successfully created a new branch'
 
-  admin_all_branches: '👥 Все текущие филиалы:'
+  admin_all_branches: '👥 All current branches:'
 
-  button_my_branch: 👥 Мой филиал
-  button_branches: 👥 Филиалы
+  button_my_branch: 👥 My Branch
+  button_branches: 👥 Branches
 
-  percents_not_corrected: '⛔ Проценты введены неверно, повторите создание филиала заново'
-  user_not_found: '❌ Пользователь с username %s не найден в базе бота, повторите создание филиала заново'
-  chat_id_not_corrected: '⛔ Chat ID введено неверно, повторите создание филиала заново'
+  percents_not_corrected: '⛔ Percentages entered incorrectly, please restart branch creation'
+  user_not_found: '❌ User with username %s not found in the bot’s database, please restart branch creation'
+  chat_id_not_corrected: '⛔ Chat ID entered incorrectly, please restart branch creation'
 
-  message_length_limit: '⛔ Максимальная длина ответа - 128 символов'
-  request_sent: '👮 Ваша заявка была отправлена на проверку, ожидайте решения администрации'
+  message_length_limit: '⛔ Maximum response length - 128 characters'
+  request_sent: '👮 Your request has been sent for review, please wait for the administration’s decision'
   admin_get_request: |-
-    📝 Получена новая заявка в команду
-    
-    👮 Пользователь: `%s`
+    📝 A new team application has been received
+  
+    👮 User: `%s`
     🆔 ID: `%s`
-    
-    📋 Форма:
+  
+    📋 Form:
     %s
-  admin_request_accept_button: '✅ Принять'
-  admin_request_cancel_button: '❌ Отклонить'
-  admin_request_accepted: '✅ Заявка успешно принята'
-  admin_request_cancelled: '❌ Заявка успешно отклонена'
-  request_accepted: '✅ Ваша заявка в команду была принята'
-  request_cancelled: '❌ Ваша заявка в команду была отклонена'
-  button_profile: '👮 Профиль'
-  button_tools: '⚙ Инструменты'
-  button_domain: '🧬 Актуальный домен'
-  button_promo: '🎫 Промокоды'
-  button_info: 'ℹ Информация'
-  button_support: '☎ Тех. поддержка'
-  button_chat: '💬 Чат'
-  button_pays: '💸 Выплаты'
-  button_channel: 'ℹ️Канал'
-  button_manual: '📘 Мануалы'
-  button_feedback: '🌟 Отзывы'
-  button_proxy: '🌍 Получить прокси'
-  button_sms: '📱 Получить номера'
-  button_checker: '📊 Чекер'
-  button_wallet: ':moneybag: Кошелек'
-  button_withdraw: '💸 Вывод'
-  button_stats: '📊 Статистика'
-  button_deposits: '💷 Депозиты'
-  button_hide_username: '🟠 Скрыть ник в депозитах'
-  button_unhide_username: '🟢 Показывать ник в депозитах'
-  button_create_promo: '🖍 Создать промокод'
-  button_promos: '📊 Все промокоды'
-  button_cancel: '❌ Отменить'
-  button_promo_create_random: '🖌 Рандомный'
-  button_promo_create_custom: '🎲 Кастомный'
-  button_promo_delete: '🗑 Удалить промокод'
-  button_accept_withdraw: '✅ Выплачено'
-  button_cancel_withdraw: '❌ Отменить'
-  button_get_sms: '💬 Проверить смс-код'
-  button_cancel_sms: '❌ Отменить номер'
-  button_worker_panel: '💻 Воркер панель'
-  button_worker_panel_email: '✉ Изменить почту'
-  button_worker_panel_username: '👤 Изменить никнейм'
-  button_worker_panel_password: '🔑 Изменить пароль'
-  button_worker_panel_support: '🧬 Выбор обработки'
-  button_tags_skip: '🚀 Пропустить'
-  button_tags_next: '🧲 Дальше'
-  button_generate_tags: '🏷 Сгенерировать теги'
-  button_generate_usernames: '🧩 Сгенерировать имена'
-  button_painter: '🏞 Отрисовщик'
-  button_names_male: '👨 Мужской'
-  button_names_female: '👩 Женский'
-  button_unique: '🔑 Уникализация'
-  button_generate_avatars: '📷 Аватарки'
-  button_change_support_we: '🟢 Отдать обработку нам'
-  button_change_support_own: '🟠 Обрабатывать самому'
-  button_custom_domains: '🌐 Личные домены'
-  button_goto_site: '🔗 Загрузить файл'
-  button_uniq_video: '📹 Видео'
-  button_uniq_photo: '🖼 Картинку'
+admin_request_accept_button: '✅ Accept'
+admin_request_cancel_button: '❌ Decline'
+admin_request_accepted: '✅ Application successfully accepted'
+admin_request_cancelled: '❌ Application successfully declined'
+request_accepted: '✅ Your team application has been accepted'
+request_cancelled: '❌ Your team application has been declined'
+button_profile: '👮 Profile'
+button_tools: '⚙ Tools'
+button_domain: '🧬 Current Domain'
+button_promo: '🎫 Promo Codes'
+button_info: 'ℹ Information'
+button_support: '☎ Support'
+button_chat: '💬 Chat'
+button_pays: '💸 Payments'
+button_channel: 'ℹ️ Channel'
+button_manual: '📘 Manuals'
+button_feedback: '🌟 Feedback'
+button_proxy: '🌍 Get Proxy'
+button_sms: '📱 Get Numbers'
+button_checker: '📊 Checker'
+  button_wallet: '💰 Wallet'
+  button_withdraw: '💸 Withdraw'
+  button_stats: '📊 Statistics'
+  button_deposits: '💷 Deposits'
+  button_hide_username: '🟠 Hide Nickname in Deposits'
+  button_unhide_username: '🟢 Show Nickname in Deposits'
+  button_create_promo: '🖍 Create Promo Code'
+  button_promos: '📊 All Promo Codes'
+  button_cancel: '❌ Cancel'
+  button_promo_create_random: '🖌 Random'
+  button_promo_create_custom: '🎲 Custom'
+  button_promo_delete: '🗑 Delete Promo Code'
+  button_accept_withdraw: '✅ Paid'
+  button_cancel_withdraw: '❌ Cancel'
+  button_get_sms: '💬 Check SMS Code'
+  button_cancel_sms: '❌ Cancel Number'
+  button_worker_panel: '💻 Worker Panel'
+  button_worker_panel_email: '✉ Change Email'
+  button_worker_panel_username: '👤 Change Username'
+  button_worker_panel_password: '🔑 Change Password'
+  button_worker_panel_support: '🧬 Processing Selection'
+  button_tags_skip: '🚀 Skip'
+  button_tags_next: '🧲 Next'
+  button_generate_tags: '🏷 Generate Tags'
+  button_generate_usernames: '🧩 Generate Names'
+  button_painter: '🏞 Painter'
+  button_names_male: '👨 Male'
+  button_names_female: '👩 Female'
+  button_unique: '🔑 Unique'
+  button_generate_avatars: '📷 Avatars'
+  button_change_support_we: '🟢 Transfer Processing to Us'
+  button_change_support_own: '🟠 Process Yourself'
+  button_custom_domains: '🌐 Personal Domains'
+  button_goto_site: '🔗 Upload File'
+  button_uniq_video: '📹 Video'
+  button_uniq_photo: '🖼 Picture'
 
   button_deepfake: '🔄 Deepfake'
   button_tts: '🎤 Text To Speech'
 
-  invalid_file_id: '❌ Вы ввели неверный ID файла'
-  pooled_to_queue: 'Ваша уникализация поставленна в очерель. Сейчас в очереди %d элементов.'
-  queue_with_estimate: 'Вы были добавлены в очередь. Сейчас в ней %d дипфейков. Время ожидания: %s'
+  invalid_file_id: '❌ You entered an invalid file ID'
+  pooled_to_queue: 'Your unique identification has been placed in the queue. There are currently %d items in the queue.'
+  queue_with_estimate: 'You have been added to the queue. There are currently %d deepfakes in the queue. Estimated wait time: %s'
 
-  downloadUrl: '✅ Ваш метариал был успешно уникализирован!\nОн доступ для скачивания по ссылке: %s'
-  uniq_failure: '❌ Уникализация завершилась в ошибкой: %s'
+  downloadUrl: '✅ Your material has been successfully unique-identified!\nIt is available for download at: %s'
+  uniq_failure: '❌ Unique identification failed with error: %s'
 
-  deepfake_failure: '❌ Создание deepfake завершилось в ошибкой: %s'
-  deepfake_success: '✅ Deepfake создан. Скачать его можно по ссылке: %s'
+  deepfake_failure: '❌ Creating deepfake failed with error: %s'
+  deepfake_success: '✅ Deepfake created. You can download it from the link: %s'
 
-  tts_success: '✅ TTS complete. Скачать можно по ссылке: %s'
-  tts_failure: '❌ Создание TTS завершилось в ошибкой: %s'
-  tts_send_text: '💬 Введите текст для озвучивания (до 512 символов, только англ. буквы, знаки препинания):'
-  tts_choose_voice: '🎤 Выбери голос, которым нужно озвучить текст:'
-  tts_too_high: '⚠️ Текст, введеный вами, больше 512 символов!'
-  tts_not_allowed_characters: '⚠️ В тексте присутствуют не разрешенные символы, проверьте внимательно. Можно использовать: a-z,0-9,знаки препинания!'
+  tts_success: '✅ TTS complete. You can download it from the link: %s'
+  tts_failure: '❌ TTS creation failed with error: %s'
+  tts_send_text: '💬 Enter text for voiceover (up to 512 characters, English letters only, punctuation marks):'
+  tts_choose_voice: '🎤 Choose the voice for the text:'
+  tts_too_high: '⚠️ The text you entered is more than 512 characters!'
+  tts_not_allowed_characters: '⚠️ The text contains disallowed characters, please check carefully. Allowed characters: a-z, 0-9, punctuation marks!'
 
   deepfake_upload_face: |-
-    👨‍🦱 Загрузите чёткую фотографию с лицом челевека для подмены на видео.
-    Полсе чего отправьте fileId.
+    👨‍🦱 Upload a clear photograph with a person’s face for replacement.
+    in the video. After that, send the fileId.
 
   deepfake_upload_video: |-
-    📹 Загрузите видео с челвоеком, на котором нужно поменять лицо.
-    После чего отправьте fileId.
+    📹 Upload a video with a person in which you want to replace the face.
+    After that, send the fileId.
     
-    P.S: видео - не длинее 60 сек.
+    P.S: The video should not be longer than 60 seconds.
 
   method_not_allowed: |-
-    ⚠️ Вы не можете использовать эту функцию.
-    Вам необходимо %d депозитов.
+    ⚠️ You cannot use this function.
+    You need %d deposits.
 
-  custom_domains: '🌐 Все ваши личные домены:'
-  enter_domain: '🌐 Введите ваш домен (в формате http(s)://domain.lgbt)'
-  invalid_domain_error: '❌ Вы неправильно указали домен. Введите в формате http://domain.lgbt/'
-  domain_not_unique: '⚠️ Данный домен уже есть в нашей системе'
+  custom_domains: '🌐 All your personal domains:'
+  enter_domain: '🌐 Enter your domain (in the format http(s)://domain.lgbt)'
+  invalid_domain_error: '❌ You have specified the domain incorrectly. Enter it in the format http://domain.lgbt/'
+  domain_not_unique: '⚠️ This domain is already in our system'
 
-  cloudflare_moved: '❌ Ваш домен %s был перемещен с наших NS-серверов'
-  cloudflare_success: '✅ Домен %s теперь активен'
+  cloudflare_moved: '❌ Your domain %s has been moved from our NS servers'
+  cloudflare_success: '✅ The domain %s is now active'
 
   domain_info: |-
     🌐 %s: (%s)
-    Статус: %s
-    
-    Вы можете отредактировать/удалить домен в воркер-панели
+    Status: %s
+  
+    You can edit/delete the domain in the worker panel
 
   new_domain_info: |-
-    ✅ Домен был добавлен в наши системы. Остался один шаг.
-    Укажите новые nameservers для домена:
+    ✅ The domain has been added to our systems. One more step remains.
+    Specify the new nameservers for the domain:
     NS1: %s
     NS2: %s
-    
-    После успешной привязки домена я тебе обязательно напишу!
+  
+    I will definitely notify you after the domain has been successfully linked!
 
   worker_panel_support: |-
-    🚀 Умеете лить траффик, но не хотите обрабатывать?
-    Мы можем сделать это за вас!
-    
-    Просто выберите тип обработки ниже
-    
-    🔑 Сейчас выбрано: %s
+    🚀 Do you know how to drive traffic but don’t want to handle it?
+    We can do that for you!
+  
+    Just choose the type of processing below
+  
+    🔑 Currently selected: %s
+
   unique_inst: |-
-    ⚠️ Загрузите фото или видео на наш сайт, после чего введите ID файла, который выдаст вам сайт.
-    Ограничение - 100мб. Файлы типа: .png;.jpg;.jpeg;.mp4
-    
-    ❓ Введите ID файла:
+    ⚠️ Upload a photo or video to our site, then enter the file ID that the site will provide you.
+    Limit - 100MB. File types: .png; .jpg; .jpeg; .mp4
+  
+    ❓ Enter the file ID:
+
   painter: |-
-    ✏️ Введите с новой строки следующие данные: 
+    ✏️ Enter the following information on a new line:
 
-    1️⃣ Время телефона
-    2️⃣ Сумма перевода
-    3️⃣ Сумма перевода в валюте
-    4️⃣ Дата и время транзакции
-    5️⃣ Статус транзакции
-    6️⃣ Кошелек отправителя
-    7️⃣ Комиссия сети
+    1️⃣ Phone time
+    2️⃣ Transfer amount
+    3️⃣ Transfer amount in currency
+    4️⃣ Date and time of transaction
+    5️⃣ Transaction status
+    6️⃣ Sender's wallet
+    7️⃣ Network fee
 
-    👉🏻 Пример введенных данных:
+    👉🏻 Example of entered data:
 
     `15:17`
-    `0,32 BTC`
-    `5000,95 $`
+    `0.32 BTC`
+    `5000.95 $`
     `Oct 06, 2023 at 3:30 PM`
     `Completed`
-    `bc1qu5fmwa45t0mfmtc5nwh9wrwy90ueqjrw5gsqz7`
-    `0,00000585 BTC (0,2 $)`
+    `bc1qu5fmwa45t0mfmtc5nwh9wrwy90ueqjrw5gsq7`
+    `0.00000585 BTC (0.20 $)`
 
-    ℹ️ Подсказка: для сегодняшнего дня используйте Today at H:M AM/PM, например Today at 5:30 PM
+    ℹ️ Hint: For today, use Today at H:M AM/PM, for example, Today at 5:30 PM
 
-  button_back: '🔙 Назад'
+  button_back: '🔙 Back'
 
   names_male: |-
-    🖍 Выберите пол:
+    🖍 Choose gender:
   names_amount: |-
-    🖍 Выберите количество имен:
+    🖍 Choose the number of names:
   names_created: |-
-    ✅ Имена успешно сгенерированы
+    ✅ Names successfully generated
 
-    🚀 Сгенерированные имена:
+    🚀 Generated names:
     %s
 
-  admin_button_set_domain: '🌐 Изменить домен'
-  admin_button_broadcast: '📩 Сделать рассылку'
-  admin_button_workers: '👮 Воркеры'
-  admin_button_requests: '🎯 Непринятые заявки'
-  admin_button_delete_worker: '🗑 Удалить воркера'
-  admin_button_limit_worker: '🖌 Изменить лимиты воркеру'
+  admin_button_set_domain: '🌐 Change domain'
+  admin_button_broadcast: '📩 Send broadcast'
+  admin_button_workers: '👮 Workers'
+  admin_button_requests: '🎯 Unaccepted requests'
+  admin_button_delete_worker: '🗑 Delete worker'
+  admin_button_limit_worker: '🖌 Change worker limits'
 
-  admin_start: '🧩 Админ-Бот'
+  admin_start: '🧩 Admin Bot'
   admin_set_domain: |-
-    🌐 Текущий домен: `%s`
-    
-    🖍 Напишите домен, который хотите сделать актуальным:
-  admin_domain_set: '✅ Домен `%s` установлен актуальным'
-  start: '👋 Приветствуем!'
+    🌐 Current domain: `%s`
+  
+    🖍 Enter the domain you want to set as current:
+  admin_domain_set: '✅ Domain `%s` set as current'
+  start: '👋 Welcome!'
   info: |-
-    💥 Добро пожаловать в YukiTeam
-    
-    ⚠️Вступайте в наши каналы, чтобы быть в курсе всех новостей
+    💥 Welcome to YukiTeam
+
+    ⚠️ Join our channels to stay updated with all the news
   support: |-
-    ❔ Возникли проблемы? Обратитесь к нам:
-    
-    ☎️ Связаться с поддержкой: @yukitale
+    ❔ Having issues? Contact us:
+
+    ☎️ Contact support: @yukitale
   domain: |-
-    🌐 Актуальный домен: `%s`
+    🌐 Current domain: `%s`
   tools: |-
-    🔧 Инструменты для работы
-    
-    ⁉️ Лимиты:
-    ├ Прокси: `%3$s/%1$s`
-    └ Номера: `%4$s/%2$s`
-  username_not_hidden: 'не скрыт'
-  username_hidden: 'скрыт'
-  wallet_not_set: 'не указан'
+    🔧 Tools for work
+
+    ⁉️ Limits:
+    ├ Proxies: `%3$s/%1$s`
+    └ Numbers: `%4$s/%2$s`
+  username_not_hidden: 'not hidden'
+  username_hidden: 'hidden'
+  wallet_not_set: 'not set'
   profile: |-
-    👨‍💻 Ваш профиль:
+    👨‍💻 Your profile:
 
     🪪 ID: `%1$s`
 
-    👽 Статус: `%4$s`
-    🎯 Ваш процент: `%5$s%%` %10$s
+    👽 Status: `%4$s`
+    🎯 Your percentage: `%5$s%%` %10$s
 
-    💵 Баланс: `$%6$s`
+    💵 Balance: `$%6$s`
 
-    💰 Депозиты: `%7$s`
-    ├ Сумма: `$%8$s`
-    └ Ваша доля: `$%9$s`
-    
-    🤖 Настройки:
-    ├ Кошелек для выплат: `%3$s`
-    └ Ник в депозитах: `%2$s`
+    💰 Deposits: `%7$s`
+    ├ Amount: `$%8$s`
+    └ Your share: `$%9$s`
+  
+    🤖 Settings:
+    ├ Payment wallet: `%3$s`
+    └ Deposit nickname: `%2$s`
   promo: |-
-    🔹 Выберите действие
+    🔹 Choose an action
   profile_set_wallet: |-
-    🖍 Напишите кошелек для выплат в формате 'валюта: адреса'
-    
-    🎯 Пример: 
+    🖍 Enter the payment wallet in the format 'currency: address'
+  
+    🎯 Example: 
     `btc: 1JaBmsxet5LTGLL5CeAa8vsNBpiVL4eaJe`
-  profile_wallet_error: '⛔ Кошелек указан неверно, повторите действия заново'
+  profile_wallet_error: '⛔ The wallet is incorrectly specified, please try again'
   profile_wallet_set: |-
-    :moneybag: Вы установили новый кошелек для выплат: 
+    💰 You have set a new payment wallet: 
     `%1$s`
-  error: '⛔ Произошла непредвиденная ошибка'
-  promo_create_select_type: '🎯 Выберите тип промокода:'
+  error: '⛔ An unexpected error occurred'
+  promo_create_select_type: '🎯 Choose the promo code type:'
   promo_create_sum: |-
-    🖍 Напишите сумму и валюту для промокода
-    
-    🎯 Примеры: `0.1 BTC`, `0.5 ETH`, `1000 USDT`
+    🖍 Enter the amount and currency for the promo code
+  
+    🎯 Examples: `0.1 BTC`, `0.5 ETH`, `1000 USDT`
   promo_create_name: |-
-    🖍 Напишите название промокода:
-    
-    🎯 Пример: `NEWYEAR`
-  promo_name_error: '⛔ Название промокода введено неверно, повторите действия заново'
-  promo_sum_error: '⛔ Сумма или валюта введены неверно'
-  promo_already_exists: '⛔ Промокод с таким названием уже существует, повторите действия заново'
-  promo_invalid_text: '⛔ Текст промокода некорректен, сообщите администратору'
-  promo_currency_not_found: '⛔ Указанная вами валюта не найдена, повторите действия заново'
-  worker_promo_limit: '⛔ Вы достигли лимита по промокодам (50). Удалите старый промокод, чтобы создать новый'
-  withdraw_no_amount: '⛔ У вас недостаточно денег на балансе'
-  promo_created: '✅ Вы создали промокод `%1$s` на сумму `%2$s %3$s`'
+    🖍 Enter the promo code name:
+  
+    🎯 Example: `NEWYEAR`
+  promo_name_error: '⛔ The promo code name is incorrectly specified, please try again'
+  promo_sum_error: '⛔ The amount or currency is incorrectly specified'
+  promo_already_exists: '⛔ A promo code with this name already exists, please try again'
+  promo_invalid_text: '⛔ The promo code text is incorrect, please contact the administrator'
+  promo_currency_not_found: '⛔ The currency you specified was not found, please try again'
+  worker_promo_limit: '⛔ You have reached the promo code limit (50). Delete an old promo code to create a new one'
+  withdraw_no_amount: '⛔ You do not have enough money in your balance'
+  promo_created: '✅ You have created the promo code `%1$s` for an amount of `%2$s %3$s`'
   promo_all: |-
-    🎫 Ваши промокоды:
-    
+    🎫 Your promo codes:
+  
     %s
   promo_line: |-
     %1$s. `%2$s` - **%3$s %4$s**  |  👥 **%6$s**  💸  **%7$s** / **%8$s**$
-    └ Создан: **%5$s**
+    └ Created: **%5$s**
   promo_delete: |-
-    🖍 Напишите название промокода, который хотите удалить
-  promo_deleted: '✅ Промокод `%1$s` успешно удален'
-  promo_not_found: '⛔ Промокод не найден, повторите действия заново'
+    🖍 Enter the name of the promo code you want to delete
+  promo_deleted: '✅ Promo code `%1$s` successfully deleted'
+  promo_not_found: '⛔ Promo code not found, please try again'
+
   deposit_for_worker: |-
-    ⚡️ Новый депозит!
+    ⚡️ New deposit!
 
-    🔗 Домен: `%1$s`
-    🖥 Промокод: `%2$s`
+    🔗 Domain: `%1$s`
+    🖥 Promo code: `%2$s`
 
-    💳 Сумма: `$%3$s` `(%4$s %5$s)`
-    ├ Процент воркера: `%6$s%%` `%8$s`
-    └ Доля воркера: `$%7$s`
-  wallet_not_setted: '⛔ У вас не указан кошелек'
+    💳 Amount: `$%3$s` `(%4$s %5$s)`
+    ├ Worker’s percentage: `%6$s%%` `%8$s`
+    └ Worker’s share: `$%7$s`
+
+  wallet_not_setted: '⛔ Your wallet is not set'
   profile_withdraw_sum: |-
-    🖍 Напишите сумму для вывода
-    
-    🎯 Доступно: `$``%1$s`
-  withdraw_sum_error: '⛔ Сумма указана неверно, повторите действия заново'
-  withdraw: '✅ Заявка на вывод успешно создана, ожидайте проверки администратором'
+    🖍 Enter the amount for withdrawal
+
+    🎯 Available: `$%1$s`
+  withdraw_sum_error: '⛔ The amount is incorrectly specified, please try again'
+  withdraw: '✅ Withdrawal request successfully created, awaiting administrator approval'
   withdraw_for_admin: |-
-    ⚡ Запрос на вывод
-    
-    👮 Воркер: `%1$s`
-    :moneybag: Сумма: `$%2$s`
-    💳 Кошелек: `%3$s`
-  withdraw_accepted_for_admin: '✅ Заявка выплачена'
-  withdraw_accepted: '✅ Ваша заявка была выплачена'
-  withdraw_cancelled: '❌ Ваша заявка на вывод была отменена, деньги возращены на баланс'
-  withdraw_cancelled_for_admin: '❌ Заявка на вывод была отменена, деньги возращены воркеру на баланс'
+    ⚡ Withdrawal request
+
+    👮 Worker: `%1$s`
+    💰 Amount: `$%2$s`
+    💳 Wallet: `%3$s`
+  withdraw_accepted_for_admin: '✅ Request has been paid'
+  withdraw_accepted: '✅ Your request has been paid'
+  withdraw_cancelled: '❌ Your withdrawal request has been canceled, money returned to balance'
+  withdraw_cancelled_for_admin: '❌ Withdrawal request has been canceled, money returned to the worker’s balance'
   profile_stats: |-
-    📊 Ваша статистика:
-    
-    📅 Дата вступления в команду: `%1$s`
-    
-    👮 Пользователей: `%2$s`
-    
-    💰 Депозиты: `%3$s`
-    ├ Сумма: `$%4$s`
-    └ Ваша доля: `$%5$s`
+    📊 Your statistics:
+
+    📅 Date joined the team: `%1$s`
+
+    👮 Users: `%2$s`
+
+    💰 Deposits: `%3$s`
+    ├ Amount: `$%4$s`
+    └ Your share: `$%5$s`
+
   deposit_line: |-
     %1$s. %2$s
-    ├ Сумма: `$%3$s (%4$s %5$s)`
-    └ Ваша доля: `$%6$s`
+    ├ Amount: `$%3$s (%4$s %5$s)`
+    └ Your share: `$%6$s`
+
   profile_deposits: |-
-    💸 Список ваших депозитов:
-    
+    💸 List of your deposits:
+
     %s
+
   tools_sms: |-
-    🌐 Выберите страну для номера:
-  tools_error: '⛔ Баланс личного кабинета закончился, сообщите администратору'
-  tools_sms_error: '⛔ Ошибка получения номера, сообщите администратору'
+    🌐 Choose a country for the number:
+  tools_error: '⛔ Your account balance has run out, please contact the administrator'
+  tools_sms_error: '⛔ Error obtaining the number, please contact the administrator'
   admin_workers: |-
-    👮 Всего воркеров `%1$s`:
-    
+    👮 Total workers `%1$s`:
+
     %2$s
   admin_limit_workers: |-
-    👮 Всего запросов `%1$s`:
-    
+    👮 Total requests `%1$s`:
+
     %2$s
   admin_worker_line: |-
-    %1$s.  `@%2$s`:  %3$s, 🎯  **%7$s %6$s%%**  (**%8$s прокси/%9$s номера)  💸  **%4$s** / **%5$s**$
-  delete_worker: '🖍 Напишите id воркера, чтобы удалить его'
+    %1$s.  `@%2$s`:  %3$s, 🎯  **%7$s %6$s%%**  (**%8$s proxies/%9$s numbers)  💸  **%4$s** / **%5$s**$
+  delete_worker: '🖍 Enter the worker id to delete it'
   group_worker_percent: |-
-    🖍 Напишите процент и id группы в таком формате: **процент id**
-    
-    🎯 Пример:
+    🖍 Enter the percentage and group id in the format: **percentage id**
+
+    🎯 Example:
     `35 1`
   limit_worker_limit: |-
-    🖍 Напишите лимиты: **прокси/смс**
+    🖍 Enter limits: **proxies/sms**
 
-    🎯 Пример:
+    🎯 Example:
     `5/2`
-  worker_not_found: '❌ Воркер с таким id не найден'
-  worker_deleted: '✅ Воркер `%1$s` успешно удален'
-  worker_limit_changed: '✅ Лимиты воркера успешно изменены'
-  broadcast: '🖍 Напишите сообщение, которое хотите разослать:'
-  tools_limit_proxy: '⛔ Вы достигли дневного лимита на прокси'
-  tools_limit_sms: '⛔ Вы достигли дневного лимита на смс'
+
+  worker_not_found: '❌ Worker with this id not found'
+  worker_deleted: '✅ Worker `%1$s` successfully deleted'
+  worker_limit_changed: '✅ Worker’s limits successfully changed'
+  broadcast: '🖍 Enter the message you want to broadcast:'
+  tools_limit_proxy: '⛔ You have reached the daily limit for proxies'
+  tools_limit_sms: '⛔ You have reached the daily limit for SMS'
   proxy_get: |-
-    🌐 Получен прокси:
-    
+    🌐 Proxy received:
+
     ├ IP: `%1$s`
     ├ Port: `%2$s`
     ├ User: `%3$s`
     └ Password: `%4$s`
   sms_get: |-
-    🌐 Получен номер:
-    
-    ├ Номер: `%1$s`
-    └ Смс: `%2$s`
-  no_sms: 'нет'
-  sms_cancel_error: '⛔ Ошибка отмены номеры. Возможно, он был использован'
-  sms_canceled: '✅ Номер был успешно отменен'
-  sms_get_error: '⛔ Ошибка получения смс'
-  request_already_accepted: '⛔ Заявка уже принята или отклонена'
+    🌐 Number received:
+
+    ├ Number: `%1$s`
+    └ SMS: `%2$s`
+
+  no_sms: 'no'
+  sms_cancel_error: '⛔ Error canceling the number. It might have been used'
+  sms_canceled: '✅ The number has been successfully canceled'
+  sms_get_error: '⛔ Error retrieving SMS'
+  request_already_accepted: '⛔ The request has already been accepted or declined'
   worker_panel: |-
-    🖥 Для входа в воркер-панель на сайте
-    перейдите в браузере по **актуальному домену**
-    и войдите в свой аккаунт:
-    
+    🖥 To access the worker panel on the website,
+    go to the **current domain** in your browser
+    and log in to your account:
+
     ✉ Email: %1$s
     👤 Username: %2$s
     🔑 Password: %3$s
-  worker_panel_email_error: '⛔ Почта введена неверно, повторите действия заново'
-  worker_panel_username_error: '⛔ Никнейм введен неверно, повторите действия заново'
-  worker_panel_password_error: '⛔ Пароль введена неверно, допустимая длина 8 - 64, повторите действия заново'
-  worker_panel_email_changed: '✅ Вы успешно изменили почту воркер панели'
-  worker_panel_username_changed: '✅ Вы успешно изменили никнейм воркер панели'
-  worker_panel_password_changed: '✅ Вы успешно изменили пароль воркер панели'
+  worker_panel_email_error: '⛔ Email entered incorrectly, please try again'
+  worker_panel_username_error: '⛔ Username entered incorrectly, please try again'
+  worker_panel_password_error: '⛔ Password entered incorrectly, acceptable length is 8 - 64, please try again'
+  worker_panel_email_changed: '✅ You have successfully changed the worker panel email'
+  worker_panel_username_changed: '✅ You have successfully changed the worker panel username'
+  worker_panel_password_changed: '✅ You have successfully changed the worker panel password'
   worker_panel_change_email: |-
-    🖍 Придумайте новую почту:
+    🖍 Choose a new email:
 
-    🎯 Пример: 
+    🎯 Example: 
     `worker@gmail.com`
+
   worker_panel_change_username: |-
-    🖍 Придумайте новый никнейм:
+    🖍 Choose a new username:
 
-    🎯 Пример: 
+    🎯 Example: 
     `Worker`
-  worker_panel_change_password: |-
-    🖍 Придумайте новый пароль:
-  worker_panel_email_already_exists_error: '⛔ Данная почта уже занята, повторите действия заново'
-  worker_panel_username_already_exists_error: '⛔ Данный никнейм уже занят, повторите действия заново'
-  tags: |-
-    🖍 Придумайте текст или нажите пропустить:
-  tags_amount: |-
-    🖍 Выберите количество тегов:
-  tags_created: |-
-    ✅ Теги успешно сгенерированы
-    ❗️Обязательно посмотрите теги по просмотрам, если на тегах мало просмотров, произведите генерацию снова
 
-    🚀 Сгенерированные теги:
+  worker_panel_change_password: |-
+    🖍 Choose a new password:
+  worker_panel_email_already_exists_error: '⛔ This email is already taken, please try again'
+  worker_panel_username_already_exists_error: '⛔ This username is already taken, please try again'
+  tags: |-
+    🖍 Enter text or press skip:
+  tags_amount: |-
+    🖍 Choose the number of tags:
+  tags_created: |-
+    ✅ Tags successfully generated
+    ❗️ Be sure to check the tags for views; if the tags have few views, regenerate them
+
+    🚀 Generated tags:
     %1$s
   tools_checker: |-
-    🖍 Отправьте ссылку на видео или аккаунт:
-  no_videos: '⛔ Видео не найдены'
+    🖍 Send a link to the video or account:
+  no_videos: '⛔ No videos found'
   checker_info: |-
-    Ссылка: %1$s
+    Link: %1$s
     
-    Статистика последних видео:
+    Statistics for the latest videos:
     %2$s
-    Общая статистика:
+    Overall statistics:
      👁 %3$s | ❤ %4$s | 💬 %5$s | 📢 %6$s | 💾 %7$s
   video_info: |-
-    🔗 Видео (%1$s) #%2$s Качество: %3$s
-    🕐 Время залива: %4$s
-    🌍 Гео залива: %14$s %5$s
-    ⚠ Теневой бан: %6$s
-    🏷 Описание: %7$s
+    🔗 Video (%1$s) #%2$s Quality: %3$s
+    🕐 Upload time: %4$s
+    🌍 Upload geo: %14$s %5$s
+    ⚠ Shadow ban: %6$s
+    🏷 Description: %7$s
     👁‍ %8$s 🗨 %9$s | ❤ %10$s | 💬 %11$s | 📢 %12$s | 💾 %13$s
-  start_check: '🌐 Собираем данные...'
-  check_invalid_url: '⛔ URL или @username введены неверно, повторите действия заново'
-  check_error: '⛔ Ошибка получения данных об аккаунте/видео'
-  withdraw_already_accepted: '⛔ Заявка на выплату уже была принята или отклонена'
-  admin_button_withdraws: '💰 Незавершенные выплаты'
-  admin_button_balance_worker: '💰 Изменить баланс воркеру'
-  balance_worker_id: '🖍 Напишите id воркера, чтобы изменить ему баланс'
-  worker_balance_changed: '✅ Баланс воркера успешно изменен на %1$s'
+  start_check: '🌐 Gathering data...'
+  check_invalid_url: '⛔ URL or @username is incorrect, please try again'
+  check_error: '⛔ Error retrieving account/video data'
+  withdraw_already_accepted: '⛔ Withdrawal request has already been accepted or rejected'
+  admin_button_withdraws: '💰 Pending withdrawals'
+  admin_button_balance_worker: '💰 Change worker balance'
+  balance_worker_id: '🖍 Enter the worker ID to change their balance'
+  worker_balance_changed: '✅ Worker balance successfully changed to %1$s'
   balance_worker_balance: |-
-    🖍 Напишите сумму, которая будет установлена на баланс воркеру
-  worker_limit_cooldown: 'жди 24 часа'
-  worker_already_limit: 'вы уже отправили запрос'
-  worker_refusal: 'вы отказали воркеру'
-  worker_refusal_cooldown: 'Вам отказали ждите 24 часа'
-  refusal_worker: '🖍 Напишите id воркера, чтобы отказать ему'
-  admin_button_refusal_limit: 'Нажмите чтобы отказать'
-  admin_button_accept_limit: 'Нажмите чтобы принять'
-  accept_limit: 'Ваш запрос одобрен'
-  button_update_limits: '📈 Обновление лимитов'
-  admin_update_limits: 'Запросы на лимиты'
-  worker_send_limit: 'Отправлен запрос на обновление лимитов'
+    🖍 Enter the amount to be set on the worker's balance
+  worker_limit_cooldown: 'wait 24 hours'
+  worker_already_limit: 'you have already sent a request'
+  worker_refusal: 'you refused the worker'
+  worker_refusal_cooldown: 'You were refused, wait 24 hours'
+  refusal_worker: '🖍 Enter the worker ID to refuse them'
+  admin_button_refusal_limit: 'Click to refuse'
+  admin_button_accept_limit: 'Click to accept'
+  accept_limit: 'Your request has been approved'
+  button_update_limits: '📈 Update limits'
+  admin_update_limits: 'Limit requests'
+  worker_send_limit: 'Request to update limits sent'
