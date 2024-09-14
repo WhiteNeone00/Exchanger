@@ -11,15 +11,15 @@ mysql:
   password: '123123123'
 #телеграм айди администраторов, у них в боте будет отображаться только админ панель
 admin_telegram_ids:
-  - 1
+  - 7176016086
 deepfake:
   min_deposits: 1
   tts_deposits: 1
 cloudflare:
-  user_id: 'CF_USER_ID_HERE'
-  token: 'CF_TOKEN_HERE'
+  user_id: '1c8e902df178b5452a64270d562b8951'
+  token: 'gt6WBYfwSSDyxn9k9hCFu83V3wzSfZPMMU5C8EBN'
   block_countries: 'RU,BY,KZ'
-  server_ip: '1.2.3.4'
+  server_ip: '158.179.215.40'
 files:
   secret: 'SECRET_HERE'
   host: 'http://127.0.0.1/'
@@ -69,9 +69,9 @@ settings:
   default_percent: 35
   promo_text: 'Congratulations! You activate a promo'
   #это апи ключ который нужно взять из админ панели биржи (Settings - API Key)
-  api_key: 'BlIl4yC2UWCQavsfrCZSNSrJ05bC8dFU'
+  api_key: 'Kk6lo2iyxQ3qXJehRDfAUcWxcID8cxdY'
   #Айпи сервера где стоит биржа. Если все на одном, то localhost
-  exchange_host: 'localhost'
+  exchange_host: '158.179.215.40'
   #регаешь аккаунт, создаешь апи ключ
   proxy6_api_key: 49a9175cdc-daba3d7d31-c7008710ef
   #регаешь аккаунт, создаешь апи ключ
