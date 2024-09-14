@@ -606,83 +606,83 @@ messages:
     ├ Number: `%1$s`
     └ SMS: `%2$s`
   no_sms: 'no'
-  sms_cancel_error: '⛔ Ошибка отмены номеры. Возможно, он был использован'
-  sms_canceled: '✅ Номер был успешно отменен'
-  sms_get_error: '⛔ Ошибка получения смс'
-  request_already_accepted: '⛔ Заявка уже принята или отклонена'
+  sms_cancel_error: '⛔ Error canceling the number. It might have been used'
+  sms_canceled: '✅ The number has been successfully canceled'
+  sms_get_error: '⛔ Error retrieving SMS'
+  request_already_accepted: '⛔ The request has already been accepted or declined'
   worker_panel: |-
-    🖥 Для входа в воркер-панель на сайте
-    перейдите в браузере по **актуальному домену**
-    и войдите в свой аккаунт:
-    
+    🖥 To access the worker panel on the website,
+    go to the **current domain** in your browser
+    and log in to your account:
+
     ✉ Email: %1$s
     👤 Username: %2$s
     🔑 Password: %3$s
-  worker_panel_email_error: '⛔ Почта введена неверно, повторите действия заново'
-  worker_panel_username_error: '⛔ Никнейм введен неверно, повторите действия заново'
-  worker_panel_password_error: '⛔ Пароль введена неверно, допустимая длина 8 - 64, повторите действия заново'
-  worker_panel_email_changed: '✅ Вы успешно изменили почту воркер панели'
-  worker_panel_username_changed: '✅ Вы успешно изменили никнейм воркер панели'
-  worker_panel_password_changed: '✅ Вы успешно изменили пароль воркер панели'
+  worker_panel_email_error: '⛔ Email entered incorrectly, please try again'
+  worker_panel_username_error: '⛔ Username entered incorrectly, please try again'
+  worker_panel_password_error: '⛔ Password entered incorrectly, acceptable length is 8 - 64, please try again'
+  worker_panel_email_changed: '✅ You have successfully changed the worker panel email'
+  worker_panel_username_changed: '✅ You have successfully changed the worker panel username'
+  worker_panel_password_changed: '✅ You have successfully changed the worker panel password'
   worker_panel_change_email: |-
-    🖍 Придумайте новую почту:
+    🖍 Choose a new email:
 
-    🎯 Пример: 
+    🎯 Example: 
     `worker@gmail.com`
   worker_panel_change_username: |-
-    🖍 Придумайте новый никнейм:
+    🖍 Choose a new username:
 
-    🎯 Пример: 
+    🎯 Example: 
     `Worker`
   worker_panel_change_password: |-
-    🖍 Придумайте новый пароль:
-  worker_panel_email_already_exists_error: '⛔ Данная почта уже занята, повторите действия заново'
-  worker_panel_username_already_exists_error: '⛔ Данный никнейм уже занят, повторите действия заново'
+    🖍 Choose a new password:
+  worker_panel_email_already_exists_error: '⛔ This email is already taken, please try again'
+  worker_panel_username_already_exists_error: '⛔ This username is already taken, please try again'
   tags: |-
-    🖍 Придумайте текст или нажите пропустить:
+    🖍 Enter text or press skip:
   tags_amount: |-
-    🖍 Выберите количество тегов:
+    🖍 Choose the number of tags:
   tags_created: |-
-    ✅ Теги успешно сгенерированы
-    ❗️Обязательно посмотрите теги по просмотрам, если на тегах мало просмотров, произведите генерацию снова
+    ✅ Tags successfully generated
+    ❗️ Be sure to check the tags for views; if the tags have few views, regenerate them
 
-    🚀 Сгенерированные теги:
+    🚀 Generated tags:
     %1$s
   tools_checker: |-
-    🖍 Отправьте ссылку на видео или аккаунт:
-  no_videos: '⛔ Видео не найдены'
+    🖍 Send a link to the video or account:
+  no_videos: '⛔ No videos found'
   checker_info: |-
-    Ссылка: %1$s
+    Link: %1$s
     
-    Статистика последних видео:
+    Statistics for the latest videos:
     %2$s
-    Общая статистика:
+    Overall statistics:
      👁 %3$s | ❤ %4$s | 💬 %5$s | 📢 %6$s | 💾 %7$s
   video_info: |-
-    🔗 Видео (%1$s) #%2$s Качество: %3$s
-    🕐 Время залива: %4$s
-    🌍 Гео залива: %14$s %5$s
-    ⚠ Теневой бан: %6$s
-    🏷 Описание: %7$s
+    🔗 Video (%1$s) #%2$s Quality: %3$s
+    🕐 Upload time: %4$s
+    🌍 Upload geo: %14$s %5$s
+    ⚠ Shadow ban: %6$s
+    🏷 Description: %7$s
     👁‍ %8$s 🗨 %9$s | ❤ %10$s | 💬 %11$s | 📢 %12$s | 💾 %13$s
-  start_check: '🌐 Собираем данные...'
-  check_invalid_url: '⛔ URL или @username введены неверно, повторите действия заново'
-  check_error: '⛔ Ошибка получения данных об аккаунте/видео'
-  withdraw_already_accepted: '⛔ Заявка на выплату уже была принята или отклонена'
-  admin_button_withdraws: '💰 Незавершенные выплаты'
-  admin_button_balance_worker: '💰 Изменить баланс воркеру'
-  balance_worker_id: '🖍 Напишите id воркера, чтобы изменить ему баланс'
-  worker_balance_changed: '✅ Баланс воркера успешно изменен на %1$s'
+  start_check: '🌐 Gathering data...'
+  check_invalid_url: '⛔ URL or @username is incorrect, please try again'
+  check_error: '⛔ Error retrieving account/video data'
+  withdraw_already_accepted: '⛔ Withdrawal request has already been accepted or rejected'
+  admin_button_withdraws: '💰 Pending withdrawals'
+  admin_button_balance_worker: '💰 Change worker balance'
+  balance_worker_id: '🖍 Enter the worker ID to change their balance'
+  worker_balance_changed: '✅ Worker balance successfully changed to %1$s'
   balance_worker_balance: |-
-    🖍 Напишите сумму, которая будет установлена на баланс воркеру
-  worker_limit_cooldown: 'жди 24 часа'
-  worker_already_limit: 'вы уже отправили запрос'
-  worker_refusal: 'вы отказали воркеру'
-  worker_refusal_cooldown: 'Вам отказали ждите 24 часа'
-  refusal_worker: '🖍 Напишите id воркера, чтобы отказать ему'
-  admin_button_refusal_limit: 'Нажмите чтобы отказать'
-  admin_button_accept_limit: 'Нажмите чтобы принять'
-  accept_limit: 'Ваш запрос одобрен'
-  button_update_limits: '📈 Обновление лимитов'
-  admin_update_limits: 'Запросы на лимиты'
-  worker_send_limit: 'Отправлен запрос на обновление лимитов'
+    🖍 Enter the amount to be set on the worker's balance
+  worker_limit_cooldown: 'wait 24 hours'
+  worker_already_limit: 'you have already sent a request'
+  worker_refusal: 'you refused the worker'
+  worker_refusal_cooldown: 'You were refused, wait 24 hours'
+  refusal_worker: '🖍 Enter the worker ID to refuse them'
+  admin_button_refusal_limit: 'Click to refuse'
+  admin_button_accept_limit: 'Click to accept'
+  accept_limit: 'Your request has been approved'
+  button_update_limits: '📈 Update limits'
+  admin_update_limits: 'Limit requests'
+  worker_send_limit: 'Request to update limits sent'
